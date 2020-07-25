@@ -887,10 +887,9 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- preloader js -->
   <script>
-    $(window).on("load", function(){
-      $(".loader_bg").fadeOut("slow");
-      
-    });
+    setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+    }, 5000);
   </script>
   <!-- counter js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
